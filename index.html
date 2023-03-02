@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Afin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type ="script" href="script.js">
+</head>
+
+<body>
+    <div id="main-data">
+        <form action="" onsubmit="handler_submit(event,this)">
+            <input for="" id='text'>
+            </input>
+            <input for="" id="key_a">
+
+            </input>
+            <input for="" id="key_b">
+
+            </input>
+            <input for="" id='cipher'>
+
+            </input>
+
+            <button onclick="show_answer()" id='bt'>
+                Cifra
+            </button>
+            <button type="reset">
+                Limpia
+            </button>
+
+        </form>
+    </div>
+    <script src="script.js">
+        document.write(cipher('abc',1,1));
+    </script>
+</body>
+
+
+
+</html>
