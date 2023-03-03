@@ -1,23 +1,105 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+@font-face{
+    font-family: Bebas;
+    src: url(../fonts/BebasNeue.otf);
+}
+@font-face{
+    font-family: trebuchet;
+    src: url(../fonts/TrebuchetMS.ttf);
+}
+@font-face{
+    font-family : icons;
+    src : url(../fonts/websymbols-regular-webfont.eot);
+    src : url(../fonts/websymbols-regular-webfont.svg);
+    src : url(../fonts/websymbols-regular-webfont.ttf);
+    src : url(../fonts/websymbols-regular-webfont.woff);
+}
 body{
-    
+    background-image : url("criptografia.jpg");
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+h1{
+    font-family:Trebuchet;
+    font-size:32px;
+    color: #5C95ED;
+}
+h2{
+    font-size:28px;
 }
 
 #main-data{
-    height:200px;
-    width: 200px;
+    flex-direction:column;
+    padding:10px;
+    background-color:white;
+    justify-content: center;
+    display:flex;
+    width: 400px;
     border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px #ccc;
+    margin-left:40%;
+    margin-top:5%;
+    padding:10px;
+    text-align:center;
+    align-items: center;
+}
+
+
+.buttons{
+    display:flex;
+    justify-content: space-between;
+}
+.button_reset,#bt{
+    height:40px;
+    line-height:40px;
+    width:85px;
+    border-radius:5px;
+    border:1px solid #ccc;
+    box-shadow: 1px 2px 5px black;
+    background-color:#5C95ED;
+    text-transform:uppercase;
+    margin-top:20px;
+    margin-bottom: 20px;
+    font-family:Trebuchet;
+    font-size:20px;
+    transition:all 300ms;
+}
+.button_reset:hover,#bt:hover{
+    color : black;
+    background-color: green;
+    box-shadow: 1px 1px 1px inset black;
 }
 
 #text,#key_a,#key_b,#cipher{
-    height:20px;
-    width:100px;
-    border-radius:1px solid #ccc;
+    height:40px;
+    border:none;
+    display:flex;
+    margin-top:25px;
+    margin-left:5px;
+    width:300px;
+    padding:5px;
+    font-size:24px;
+    transition: all 300ms;
+    font-family: Trebuchet;
 }
-#bt{
-    height:20px;
-    width:50px;
-    border-radius:5px;
-    border:1px solid black;
-    background-color:green;
-    text-transform:uppercase;
+#text:hover,#key_a:hover,#key_b:hover,#cipher:hover{
+    color : #5C95ED;
+    background-color: black;
+}
+.input{
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+/* CSS for the classes*/
+
+.icon{
+    font-family:icons;
+    padding-top:24px;
 }

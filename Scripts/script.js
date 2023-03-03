@@ -21,6 +21,10 @@ function cipher(s, a, b) {
     b = parseInt(b);
 
     for (let i = 0; i < n; i++) {
+        if(s[i] == ' '){
+            ans += s[i];
+            continue;
+        }
         let value = find_int(s[i]);
         value = ((value * a) + b) % 27;
         let my_char = find_char(value);

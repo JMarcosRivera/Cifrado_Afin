@@ -7,33 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cifrado Afin</title>
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="CSS/securedwebpagewebsitetrustedprotected_95898.ico">
 </head>
 
 <body>
     <div id="main-data">
+        <h1>Afin Cipher.</h1>
+        <br>
+        <h2>Type the text that you want to Cipher and the keys A,B.</h2>
         <form action="" onsubmit="handler_submit(event,this)">
-            <input for="" id='text' placeholder="Texto en Claro">
-            </input>
-            <input for="" id="key_a" placeholder="Llave A">
+            <div class="input">
+                <p class="icon"> w </p>
+                <input for="" id='text' placeholder="Text to cipher"></input>
+            </div>
+            <div class="input">
+                <p class="icon"> K </p>
+                <input for="" id="key_a" placeholder="Key A">
+            </div>
+            <div class="input">
+                <p class="icon"> K </p>
+                <input for="" id="key_b" placeholder="Key B"></input>
 
-            </input>
-            <input for="" id="key_b" placeholder="Llave B">
+            </div>
+            <div class="input">
+                <p class="icon"> x </p>
+                <input for="" id='cipher' placeholder="Texto Cifrado">
+            </div>
 
-            </input>
-            <input for="" id='cipher' placeholder="Texto Cifrado">
-
-            </input>
-
-            <button onclick="show_answer()" id='bt'>
-                Cifra
-            </button>
-            <button type="reset">
-                Limpia
-            </button>
+            <div class="buttons">
+                <button onclick="show_answer()" id='bt'>
+                    Cipher
+                </button>
+                <button type="reset" class="button_reset">
+                    Clean
+                </button>
+            </div>
+            
 
         </form>
     </div>
-    <script src="script.js"></script>
+    <script src="Scripts/script.js"></script>
 </body>
 
 
