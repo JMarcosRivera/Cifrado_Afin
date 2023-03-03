@@ -12,39 +12,87 @@
 
 <body>
     <div id="main-data">
-        <h1>Afin Cipher.</h1>
-        <br>
-        <h2>Type the text that you want to Cipher and the keys A,B.</h2>
-        <form action="" onsubmit="handler_submit(event,this)">
-            <div class="input">
-                <p class="icon"> w </p>
-                <input for="" id='text' placeholder="Text to cipher"></input>
-            </div>
-            <div class="input">
-                <p class="icon"> K </p>
-                <input for="" id="key_a" placeholder="Key A">
-            </div>
-            <div class="input">
-                <p class="icon"> K </p>
-                <input for="" id="key_b" placeholder="Key B"></input>
+        <button id="option1" onclick="display_cipher()">
+            <h1 style="color:black">Cipher</h1>
+        </button>
+        <button id="option2" onclick="display_decipher()">
+            <h1 style="color:black">Decipher</h1>
+        </button>
+        <div id="for_cipher">
+            <h1>Afin Cipher.</h1>
+            <br>
+            <h2>Type the text that you want to Cipher and the keys A,B.</h2>
+
+            <div id="display-cipher">
+                <form action="" onsubmit="handler_submit(event,this)">
+                    <div class="input">
+                        <p class="icon"> w </p>
+                        <input for="" id='text' placeholder="Text to cipher"></input>
+                    </div>
+                    <div class="input">
+                        <p class="icon"> K </p>
+                        <input for="" id="key_a" placeholder="Key A">
+                    </div>
+                    <div class="input">
+                        <p class="icon"> K </p>
+                        <input for="" id="key_b" placeholder="Key B"></input>
+
+                    </div>
+                    <div class="input">
+                        <p class="icon"> x </p>
+                        <input for="" id='cipher' placeholder="Cipher text" readonly>
+                    </div>
+
+                    <div class="buttons">
+                        <button onclick="show_answer()" class='bt'>
+                            Cipher
+                        </button>
+                        <button type="reset" class="button_reset">
+                            Clean
+                        </button>
+                    </div>
 
             </div>
-            <div class="input">
-                <p class="icon"> x </p>
-                <input for="" id='cipher' placeholder="Texto Cifrado">
-            </div>
+            </form>
+        </div>
+        <div id="for_decipher">
+            <h1>Afin Decipher.</h1>
+            <br>
+            <h2>Type the text that you want to Decipher and the keys A,B.</h2>
 
-            <div class="buttons">
-                <button onclick="show_answer()" id='bt'>
-                    Cipher
-                </button>
-                <button type="reset" class="button_reset">
-                    Clean
-                </button>
-            </div>
-            
+            <div id="display-decipher">
+                <form action="" onsubmit="handler_submit(event,this)">
+                    <div class="input">
+                        <p class="icon"> x </p>
+                        <input for="" id='text_des' placeholder="Text to decipher"></input>
+                    </div>
+                    <div class="input">
+                        <p class="icon"> K </p>
+                        <input for="" id="key_a_des" placeholder="Key A">
+                    </div>
+                    <div class="input">
+                        <p class="icon"> K </p>
+                        <input for="" id="key_b_des" placeholder="Key B"></input>
 
-        </form>
+                    </div>
+                    <div class="input">
+                        <p class="icon"> w </p>
+                        <input for="" id='decipher' placeholder="Decipher text" readonly>
+                    </div>
+
+                    <div class="buttons">
+                        <button onclick="show_answer1()" class='bt'>
+                            Decipher
+                        </button>
+                        <button type="reset" class="button_reset">
+                            Clean
+                        </button>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+
     </div>
     <script src="Scripts/script.js"></script>
 </body>
