@@ -34,6 +34,7 @@ h2{
 }
 
 #main-data{
+    position:relative;
     flex-direction:column;
     padding:10px;
     background-color:white;
@@ -111,8 +112,8 @@ h2{
     height:40px;
     display:flex;
     position:absolute;
-    top:4.2%;
-    right:30.75%;
+    top:-40px;
+    left:0px;
     background-color:white;
     border-radius:20px 20px 0px 0px;
     justify-content: center;
@@ -126,8 +127,8 @@ h2{
     height:40px;
     display:flex;
     position:absolute;
-    top:4.2%;
-    right:14.65%;
+    right:0px;
+    top:-40px;
     background-color:#ccc;
     border-radius:20px 20px 0px 0px;
     justify-content: center;

@@ -18,6 +18,7 @@
         <button id="option2" onclick="display_decipher()">
             <h1 style="color:black">Decipher</h1>
         </button>
+
         <div id="for_cipher">
             <h1>Afin Cipher.</h1>
             <br>
@@ -64,24 +65,24 @@
                 <form action="" onsubmit="handler_submit(event,this)">
                     <div class="input">
                         <p class="icon"> x </p>
-                        <input for="" id='text_des' placeholder="Text to decipher"></input>
+                        <input for="" id='text' placeholder="Text to decipher"></input>
                     </div>
                     <div class="input">
                         <p class="icon"> K </p>
-                        <input for="" id="key_a_des" placeholder="Key A">
+                        <input for="" id="key_a" placeholder="Key A">
                     </div>
                     <div class="input">
                         <p class="icon"> K </p>
-                        <input for="" id="key_b_des" placeholder="Key B"></input>
+                        <input for="" id="key_b" placeholder="Key B"></input>
 
                     </div>
                     <div class="input">
                         <p class="icon"> w </p>
-                        <input for="" id='decipher' placeholder="Decipher text" readonly>
+                        <input for="" id='cipher' placeholder="Decipher" readonly>
                     </div>
 
                     <div class="buttons">
-                        <button onclick="show_answer1()" class='bt'>
+                        <button onclick="show_answer()" class='bt'>
                             Decipher
                         </button>
                         <button type="reset" class="button_reset">
